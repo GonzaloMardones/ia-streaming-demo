@@ -1,0 +1,28 @@
+version: '3'
+services:
+  backend:
+    build: ./backend-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend-api/.env.example
+    volumes:
+      - ./backend-api/mi-credencial.json:/app/mi-credencial.json
+
+  worker:
+    build: ./worker
+    env_file:
+      - ./worker/.env.example
+    volumes:
+      - ./backend-api/mi-credencial.json:/app/mi-credencial.json
+    depends_on:
+      - backend
+
+  frontend:
+    build: ./frontend-react
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend

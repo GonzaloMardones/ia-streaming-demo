@@ -1,0 +1,4 @@
+google-cloud-pubsub
+python-dotenv
+openai   # solo si usarás OpenAI
+google-cloud-firestore  # solo si guardarás en Firestore

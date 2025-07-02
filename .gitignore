@@ -1,0 +1,30 @@
+# Python envs
+env/
+.venv/
+__pycache__/
+*.pyc
+
+# Node modules
+frontend-react/node_modules/
+
+# Build output
+frontend-react/dist/
+
+# Variables y secretos
+*.env
+*.env.*
+.env.local
+backend-api/*.env
+worker/*.env
+**/*.env
+
+# Firebase/GCP keys
+*.json
+backend-api/*.json
+worker/*.json
+credentials/
+**/*.json
+
+# Docker
+.DS_Store
+**/.DS_Store

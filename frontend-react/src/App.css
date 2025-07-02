@@ -1,0 +1,75 @@
+/* src/App.css */
+.app-container {
+  padding: 24px;
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.prompt-input {
+  flex: 1;
+  padding: 8px;
+}
+
+.send-btn {
+  margin-left: 8px;
+  padding: 8px 16px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send-btn:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 8px;
+}
+
+.response-box {
+  margin-top: 12px;
+  background: #a08301;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.history-section {
+  margin: 24px 0;
+}
+
+.history-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+}
+
+.history-item {
+  margin-bottom: 12px;
+  background: #f9fafb;
+  padding: 8px;
+  border-radius: 6px;
+}
+.history-prompt {
+  color: #64748b;
+}
