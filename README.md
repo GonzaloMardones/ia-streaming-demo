@@ -1,4 +1,4 @@
-# IA Streaming Demo (Docker, GCP, Firestore, React)
+# AI Streaming Demo (Docker, GCP, Firestore, React)
 
 This project demonstrates an end-to-end streaming AI architecture using **React (Vite)** as the frontend, **FastAPI** as the backend, a **worker** for processing AI requests, Google **Pub/Sub**, and **Firestore** for real-time persistence—all containerized with Docker.
 
